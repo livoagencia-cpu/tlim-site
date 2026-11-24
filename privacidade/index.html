@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidade · Tlim</title>
+<meta name="description" content="Como o Tlim usa e protege os seus dados.">
+<link rel="canonical" href="https://tlim.app/privacidade/">
+<link rel="icon" href="/icone.png">
+<style>
+@font-face{font-family:"DM Sans";src:url(/fonts/dm-sans-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"DM Sans";src:url(/fonts/dm-sans-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url(/fonts/playfair-display-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{--fundo:#F5F4F2;--cartao:#FFFFFF;--texto:#422F29;--suave:#7A6A62;--rosa:#F5D9E2;--linha:#EAE8E5}
+@media (prefers-color-scheme:dark){:root{--fundo:#1C1512;--cartao:#2A211D;--texto:#F3E9E4;--suave:#BBA9A0;--rosa:#5A3E44;--linha:#3A2F2A}.logo{filter:invert(1) brightness(1.6)}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.65 "DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:var(--rosa);padding:28px 16px 24px}
+header .dentro,main{max-width:760px;margin:0 auto}
+.logo{height:34px;width:auto;display:block}
+h1{font:600 2rem/1.2 "Playfair Display",Georgia,serif;margin:18px 0 4px}
+.data{color:var(--suave);margin:0;font-size:.95rem}
+main{padding:24px 16px 48px}
+h2{font:600 1.25rem/1.3 "Playfair Display",Georgia,serif;margin:32px 0 8px}
+a{color:inherit}
+ul{padding-left:1.2em}li{margin:4px 0}
+.tabela{overflow-x:auto;margin:12px 0;border:1px solid var(--linha);border-radius:12px;background:var(--cartao)}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--linha)}
+tr:last-child td{border-bottom:0}
+th{font-weight:600}
+nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:40px;padding-top:20px;border-top:1px solid var(--linha);font-size:.95rem}
+</style>
+</head>
+<body>
+<header><div class="dentro">
+<a href="/" aria-label="Tlim, início"><img class="logo" src="/logo.svg" alt="tlim"></a>
+<h1>Política de privacidade</h1>
+<p class="data">Atualizado em 16 de novembro de 2026</p>
+</div></header>
+<main>
+<p>Seus dados financeiros servem para uma coisa: fazer o Tlim funcionar para você. A gente não vende, não aluga e não usa seus dados para anúncios. Esta política vale a partir de 7 de outubro de 2026 e segue a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018).</p>
+<h2>1. Quem cuida dos seus dados</h2>
+<p>O controlador dos dados é Caio Pitombeira Regueira, CNPJ 61.736.798/0001-29. O contato do encarregado (DPO) é <a href="mailto:privacidade@tlim.app">privacidade@tlim.app</a>.</p>
+<h2>2. Quais dados o Tlim usa</h2>
+<div class="tabela"><table><thead><tr><th>Dado</th><th>De onde vem</th><th>Onde fica</th></tr></thead><tbody>
+<tr><td>Nome, apelido, foco e tipo de renda</td><td>Você, ao começar a usar</td><td>No aparelho e, com login, na nuvem</td></tr>
+<tr><td>E-mail, nome e identificador da conta Google</td><td>Google, quando você entra</td><td>Na nuvem (Supabase Auth)</td></tr>
+<tr><td>E-mail e senha (a senha só como hash, nunca em texto)</td><td>Você, se criar conta com e-mail</td><td>Na nuvem (Supabase Auth)</td></tr>
+<tr><td>Lançamentos, contas, cartões, faturas, assinaturas, orçamentos, metas, investimentos, categorias e anotações</td><td>Você, no app ou pelo WhatsApp</td><td>No aparelho e, com login, na nuvem</td></tr>
+<tr><td>Foto do perfil</td><td>Galeria do seu celular, se você escolher</td><td>Só no aparelho</td></tr>
+<tr><td>Tema, sons, lembretes, bloqueio por biometria ou PIN e outras preferências (do PIN fica só um resumo, nunca o PIN)</td><td>Você</td><td>Só no aparelho</td></tr>
+<tr><td>Os 4 últimos números do seu WhatsApp e um código embaralhado do número inteiro (o número completo não fica guardado)</td><td>WhatsApp, se você ligar o robô</td><td>Na nuvem</td></tr>
+<tr><td>Modo casal: o nome com que você aparece, as metas do casal com os aportes, e as compras do cartão compartilhado</td><td>Você e a outra pessoa do casal, se vocês ligarem</td><td>Na nuvem, visível só para as duas pessoas do casal</td></tr>
+<tr><td>Dados técnicos de acesso (data, hora, endereço IP)</td><td>Gerados ao usar a nuvem</td><td>Registros do Supabase, por tempo limitado</td></tr>
+</tbody></table></div>
+<p>Sua digital e seu rosto nunca saem do celular: o bloqueio por biometria usa o próprio sistema do aparelho, e o Tlim só recebe a resposta "liberado" ou "não liberado".</p>
+<p>O Tlim não pede CPF, senha de banco, número de cartão nem acesso às suas contas bancárias. Das mensagens do WhatsApp, guardamos só o que foi entendido (valor, descrição, categoria, conta e data), não o texto da mensagem.</p>
+<p>Dados financeiros podem revelar muito sobre a sua vida. Por isso pedimos que você não coloque em anotações informações sensíveis que não precisa (como saúde, religião ou senhas).</p>
+<h2>3. Para que usamos</h2>
+<ul><li>Mostrar seus números, saldos, faturas, orçamentos e metas (execução do contrato com você).</li>
+<li>Guardar uma cópia na nuvem e sincronizar entre aparelhos quando você entra na sua conta (execução do contrato).</li>
+<li>Enviar por e-mail os códigos de verificação para criar a conta ou trocar a senha (execução do contrato).</li>
+<li>Calcular o rendimento dos investimentos com o CDI do Banco Central (execução do contrato).</li>
+<li>Lançar o que você manda ao robô do WhatsApp, se você ligar (seu pedido).</li>
+<li>Enviar lembretes no seu celular, se você permitir (seu consentimento, que pode ser retirado nos ajustes do celular).</li>
+<li>Manter o serviço seguro e cumprir obrigações legais (legítimo interesse e obrigação legal).</li></ul>
+<p>Não fazemos perfil para publicidade, não usamos rastreadores de anúncio e não tomamos decisões automáticas que afetem seus direitos.</p>
+<h2>4. Com quem compartilhamos</h2>
+<p>Só com os serviços que fazem o Tlim funcionar, cada um com acesso apenas ao necessário:</p>
+<div class="tabela"><table><thead><tr><th>Serviço</th><th>Para quê</th></tr></thead><tbody>
+<tr><td>Supabase (servidores em São Paulo, Brasil)</td><td>Banco de dados, login e o robô do WhatsApp</td></tr>
+<tr><td>Google</td><td>Login com a conta Google</td></tr>
+<tr><td>Brevo</td><td>Enviar os e-mails com códigos de verificação (recebe só o seu e-mail e o código)</td></tr>
+<tr><td>WhatsApp (Meta)</td><td>Receber e responder as mensagens do robô, se você ligar</td></tr>
+<tr><td>Expo (EAS)</td><td>Hospedar a versão web e as atualizações do app</td></tr>
+<tr><td>Expo e Google (Firebase)</td><td>Entregar no celular os avisos do modo casal, se você ligar (o texto do aviso passa pelos servidores deles)</td></tr>
+<tr><td>Cloudflare (Turnstile)</td><td>Conferir que quem cria a conta ou entra não é um robô</td></tr>
+<tr><td>Banco Central do Brasil</td><td>Consultar a taxa do CDI (nenhum dado seu é enviado)</td></tr>
+</tbody></table></div>
+<p><strong>Modo casal.</strong> Se você entrar no modo casal, a outra pessoa vê o nome com que você aparece, as metas do casal e quem guardou quanto nelas. Se você compartilhar um cartão, ela vê todas as compras dele, inclusive as passadas e as pessoais, mas não vê o limite, suas contas, seu saldo, sua renda nem seus outros cartões. O que ela lança no seu cartão aparece com o nome dela. Qualquer uma das duas pessoas pode sair a qualquer hora: o acesso é cortado na hora, as metas do casal são apagadas, e o que já foi lançado no cartão continua na fatura de quem é dono dele.</p>
+<p>Também podemos compartilhar dados se uma autoridade exigir por lei ou ordem judicial. Nunca vendemos dados.</p>
+<p>Alguns desses serviços podem processar dados fora do Brasil (por exemplo, o Google e a Meta, dona do WhatsApp). Quando isso acontece, seguimos as regras de transferência internacional da LGPD.</p>
+<h2>5. Como protegemos</h2>
+<ul><li>A conexão entre o app e a nuvem é sempre criptografada (HTTPS), e os dados ficam criptografados no disco dos servidores.</li>
+<li>Cada conta só enxerga os próprios dados. Isso é garantido pelo próprio banco de dados (regras de acesso por linha), não só pelo app.</li>
+<li>O Tlim nunca guarda sua senha em texto. Com e-mail e senha, fica só uma versão embaralhada (hash bcrypt), que não dá para desfazer. Com o Google, a senha fica com o Google.</li>
+<li>Ao sair da conta ou apagar os dados, o aparelho é limpo para que os dados de uma pessoa não passem para outra no mesmo celular.</li></ul>
+<p><strong>O que você precisa saber:</strong> o Tlim ainda não usa criptografia de ponta a ponta. Isso quer dizer que, tecnicamente, quem administra o banco de dados consegue ver os dados guardados na nuvem. Esse acesso é restrito a quem administra o Tlim e usado só para manter o serviço funcionando ou atender um pedido seu. Se preferir, você pode usar o Tlim sem login: aí nada sai do seu aparelho.</p>
+<p>Nenhum sistema é 100% seguro. Se acontecer um incidente que possa te prejudicar, avisamos você e a Autoridade Nacional de Proteção de Dados (ANPD).</p>
+<h2>6. Por quanto tempo guardamos</h2>
+<ul><li>Enquanto sua conta existir, guardamos seus dados para o app funcionar. Na nuvem ficam também as 20 cópias de segurança mais recentes, para resolver conflitos entre aparelhos.</li>
+<li>Ao tocar em Perfil &gt; Excluir minha conta, apagamos na hora o seu login, a ligação com o WhatsApp e os espaços em que só você está, com todos os dados deles. Em um espaço que você divide com outra pessoa, você sai dele e o que você criou fica sem nome de autor. No modo casal, excluir a conta tira você do casal: as metas do casal são apagadas e a outra pessoa é avisada; o que você lançou no cartão dela continua na fatura dela, sem o seu nome. Se pedir a exclusão por e-mail, fazemos em até 30 dias. Só guardamos o que a lei obrigar.</li>
+<li>Dados que ficam só no aparelho saem quando você apaga os dados em Perfil ou desinstala o app.</li></ul>
+<h2>7. Seus direitos</h2>
+<p>Pela LGPD, você pode a qualquer momento:</p>
+<ul><li>saber se tratamos seus dados e ter acesso a eles;</li>
+<li>corrigir dados incompletos ou errados (a maioria você corrige no próprio app);</li>
+<li>excluir a conta e os dados (direto no app, em Perfil &gt; Excluir minha conta);</li>
+<li>pedir uma cópia dos seus dados em formato aberto (portabilidade);</li>
+<li>saber com quem compartilhamos;</li>
+<li>retirar um consentimento, como os lembretes ou a ligação com o WhatsApp;</li>
+<li>reclamar na ANPD.</li></ul>
+<p>Para isso, escreva para <a href="mailto:privacidade@tlim.app">privacidade@tlim.app</a>. Respondemos em até 15 dias.</p>
+<h2>8. Crianças e adolescentes</h2>
+<p>O Tlim não é feito para menores de 18 anos. Se soubermos que guardamos dados de uma criança sem autorização de quem é responsável, apagamos.</p>
+<h2>9. Mudanças nesta política</h2>
+<p>Se algo importante mudar, avisamos no app antes de a mudança valer. A data da versão atual fica no topo, e a versão em vigor fica sempre publicada em tlim.app.</p>
+<nav><a href="/privacidade/">Política de privacidade</a><a href="/termos/">Termos de uso</a><a href="/excluir-conta/">Excluir minha conta</a><a href="mailto:contato@tlim.app">contato@tlim.app</a></nav>
+</main>
+</body>
+</html>
