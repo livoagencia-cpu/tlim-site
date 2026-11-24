@@ -37,7 +37,7 @@ nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:40px;padding-top:20px;bo
 <header><div class="dentro">
 <a href="/" aria-label="Tlim, início"><img class="logo" src="/logo.svg" alt="tlim"></a>
 <h1>Política de privacidade</h1>
-<p class="data">Atualizado em 16 de novembro de 2026</p>
+<p class="data">Atualizado em 24 de novembro de 2026</p>
 </div></header>
 <main>
 <p>Seus dados financeiros servem para uma coisa: fazer o Tlim funcionar para você. A gente não vende, não aluga e não usa seus dados para anúncios. Esta política vale a partir de 7 de outubro de 2026 e segue a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018).</p>
@@ -53,16 +53,18 @@ nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:40px;padding-top:20px;bo
 <tr><td>Tema, sons, lembretes, bloqueio por biometria ou PIN e outras preferências (do PIN fica só um resumo, nunca o PIN)</td><td>Você</td><td>Só no aparelho</td></tr>
 <tr><td>Os 4 últimos números do seu WhatsApp e um código embaralhado do número inteiro (o número completo não fica guardado)</td><td>WhatsApp, se você ligar o robô</td><td>Na nuvem</td></tr>
 <tr><td>Modo casal: o nome com que você aparece, as metas do casal com os aportes, e as compras do cartão compartilhado</td><td>Você e a outra pessoa do casal, se vocês ligarem</td><td>Na nuvem, visível só para as duas pessoas do casal</td></tr>
+<tr><td>Histórico de compras e assinaturas do Plus ou Premium e um identificador da sua conta</td><td>Google Play ou App Store, quando você assina</td><td>Na nuvem (RevenueCat)</td></tr>
 <tr><td>Dados técnicos de acesso (data, hora, endereço IP)</td><td>Gerados ao usar a nuvem</td><td>Registros do Supabase, por tempo limitado</td></tr>
 </tbody></table></div>
 <p>Sua digital e seu rosto nunca saem do celular: o bloqueio por biometria usa o próprio sistema do aparelho, e o Tlim só recebe a resposta "liberado" ou "não liberado".</p>
-<p>O Tlim não pede CPF, senha de banco, número de cartão nem acesso às suas contas bancárias. Das mensagens do WhatsApp, guardamos só o que foi entendido (valor, descrição, categoria, conta e data), não o texto da mensagem.</p>
+<p>O Tlim não pede CPF, senha de banco, número de cartão nem acesso às suas contas bancárias. O pagamento das assinaturas é feito direto na Google Play ou na App Store, e o Tlim não vê os dados do seu cartão. Das mensagens do WhatsApp, guardamos só o que foi entendido (valor, descrição, categoria, conta e data), não o texto da mensagem.</p>
 <p>Dados financeiros podem revelar muito sobre a sua vida. Por isso pedimos que você não coloque em anotações informações sensíveis que não precisa (como saúde, religião ou senhas).</p>
 <h2>3. Para que usamos</h2>
 <ul><li>Mostrar seus números, saldos, faturas, orçamentos e metas (execução do contrato com você).</li>
 <li>Guardar uma cópia na nuvem e sincronizar entre aparelhos quando você entra na sua conta (execução do contrato).</li>
 <li>Enviar por e-mail os códigos de verificação para criar a conta ou trocar a senha (execução do contrato).</li>
 <li>Calcular o rendimento dos investimentos com o CDI do Banco Central (execução do contrato).</li>
+<li>Liberar o Plus ou o Premium quando você assina e manter a assinatura em dia (execução do contrato).</li>
 <li>Lançar o que você manda ao robô do WhatsApp, se você ligar (seu pedido).</li>
 <li>Enviar lembretes no seu celular, se você permitir (seu consentimento, que pode ser retirado nos ajustes do celular).</li>
 <li>Manter o serviço seguro e cumprir obrigações legais (legítimo interesse e obrigação legal).</li></ul>
@@ -77,11 +79,12 @@ nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:40px;padding-top:20px;bo
 <tr><td>Expo (EAS)</td><td>Hospedar a versão web e as atualizações do app</td></tr>
 <tr><td>Expo e Google (Firebase)</td><td>Entregar no celular os avisos do modo casal, se você ligar (o texto do aviso passa pelos servidores deles)</td></tr>
 <tr><td>Cloudflare (Turnstile)</td><td>Conferir que quem cria a conta ou entra não é um robô</td></tr>
+<tr><td>RevenueCat</td><td>Confirmar as assinaturas do Plus e do Premium feitas pela Google Play ou App Store (recebe o histórico de compras e um identificador da sua conta, nunca os dados do cartão)</td></tr>
 <tr><td>Banco Central do Brasil</td><td>Consultar a taxa do CDI (nenhum dado seu é enviado)</td></tr>
 </tbody></table></div>
 <p><strong>Modo casal.</strong> Se você entrar no modo casal, a outra pessoa vê o nome com que você aparece, as metas do casal e quem guardou quanto nelas. Se você compartilhar um cartão, ela vê todas as compras dele, inclusive as passadas e as pessoais, mas não vê o limite, suas contas, seu saldo, sua renda nem seus outros cartões. O que ela lança no seu cartão aparece com o nome dela. Qualquer uma das duas pessoas pode sair a qualquer hora: o acesso é cortado na hora, as metas do casal são apagadas, e o que já foi lançado no cartão continua na fatura de quem é dono dele.</p>
 <p>Também podemos compartilhar dados se uma autoridade exigir por lei ou ordem judicial. Nunca vendemos dados.</p>
-<p>Alguns desses serviços podem processar dados fora do Brasil (por exemplo, o Google e a Meta, dona do WhatsApp). Quando isso acontece, seguimos as regras de transferência internacional da LGPD.</p>
+<p>Alguns desses serviços podem processar dados fora do Brasil (por exemplo, o Google, a Meta, dona do WhatsApp, e o RevenueCat, nos Estados Unidos). Quando isso acontece, seguimos as regras de transferência internacional da LGPD.</p>
 <h2>5. Como protegemos</h2>
 <ul><li>A conexão entre o app e a nuvem é sempre criptografada (HTTPS), e os dados ficam criptografados no disco dos servidores.</li>
 <li>Cada conta só enxerga os próprios dados. Isso é garantido pelo próprio banco de dados (regras de acesso por linha), não só pelo app.</li>
